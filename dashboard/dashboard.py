@@ -306,7 +306,7 @@ dist_sentimen.rename(columns={"review_id": "review_count"}, inplace=True)
 st.title("Sentiment Distribution in Review Data")
 fig, ax = plt.subplots(figsize=(16, 8))
 
-colors_ = ["#FF6347", "#FFD700", "#72BCD4"]  # Negatif - Netral - Positif
+colors_ = ["#D3D3D3", "#D3D3D3", "#72BCD4"]
 
 sns.barplot(
     y="review_count",
